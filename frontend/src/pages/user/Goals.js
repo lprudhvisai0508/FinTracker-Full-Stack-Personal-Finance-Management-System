@@ -291,7 +291,6 @@ function Goals() {
           ) : (
             <div className="goals-list">
               {completedGoals.map((goal) => {
-                const progress = getProgressPercentage(goal.currentAmount, goal.targetAmount);
                 return (
                   <div key={goal.id} className="goal-item completed">
                     <div className="goal-header">
