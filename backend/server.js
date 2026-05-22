@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://fintracker-frontend-nine.vercel.app" // 🔴 replace if your Vercel URL is different
+      "https://fin-tracker-full-stack-personal-fin-theta.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
