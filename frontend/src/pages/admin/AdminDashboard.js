@@ -13,7 +13,7 @@ function AdminDashboard() {
     user = null;
   }
 
-  const { expenses, incomeSources, goals, investments, groups, groupExpenses } = useAppContext();
+  const { expenses, incomeSources, groupExpenses } = useAppContext();
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

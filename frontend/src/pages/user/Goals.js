@@ -251,7 +251,6 @@ function Goals() {
           ) : (
             <div className="goals-list">
               {activeGoals.map((goal) => {
-                const progress = getProgressPercentage(goal.currentAmount, goal.targetAmount);
                 const daysRemaining = getDaysRemaining(goal.targetDate);
                 const remaining = getRemainingAmount(goal);
                 return (

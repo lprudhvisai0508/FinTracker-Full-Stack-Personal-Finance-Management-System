@@ -72,7 +72,6 @@ function TransactionsManagement() {
     .filter(t => t.type === "Expense" || t.type === "Group Expense")
     .reduce((sum, t) => sum + t.amount, 0);
 
-  const uniqueUsers = [...new Set(allTransactions.map(t => t.notes || "Unknown"))];
 
   return (
     <div className="page-container">
