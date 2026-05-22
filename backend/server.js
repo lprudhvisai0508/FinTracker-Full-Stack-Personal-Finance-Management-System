@@ -10,17 +10,7 @@ const app = express();
 /* =======================
    CORS CONFIG (FIXED)
    ======================= */
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://fin-tracker-full-stack-personal-fin-theta.vercel.app"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 /* =======================
    MIDDLEWARE
