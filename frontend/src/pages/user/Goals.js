@@ -212,10 +212,8 @@ function Goals() {
                 required
               >
                 <option value="">Select Goal</option>
-                {activeGoals.map((goal) => {
-                    const daysRemaining = getDaysRemaining(goal.targetDate);
-                    const remaining = getRemainingAmount(goal);
-                    const progress = getProgressPercentage(goal.currentAmount, goal.targetAmount);
+                {activeGoals.map(goal => {
+                  const remaining = getRemainingAmount(goal);
                   return (
                     <option key={goal.id} value={goal.id}>
                       {goal.name} (Remaining: ${remaining.toFixed(2)})
@@ -255,6 +253,7 @@ function Goals() {
               {activeGoals.map((goal) => {
                 const daysRemaining = getDaysRemaining(goal.targetDate);
                 const remaining = getRemainingAmount(goal);
+                const progress = getProgressPercentage(goal.currentAmount, goal.targetAmount);
                 return (
                   <div key={goal.id} className="goal-item">
                     <div className="goal-header">
